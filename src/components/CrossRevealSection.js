@@ -92,7 +92,7 @@ function CrossRevealSection({face, landscape, name, job, sentenceOne, sentenceTw
         end: () => "+=" + triggerRef.current.offsetWidth,
         scrub: true,
         pin: true,
-        anticipatePin: 1,
+        anticipatePin: true,
         // markers: true,
       },
     });

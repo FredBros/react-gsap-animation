@@ -7,6 +7,7 @@ import FaceOne from "./assets/images/faceOne.png"
 import LandscapeOne from "./assets/images/landscapeOne.png"
 import LandscapeTwo from "../src/assets/images/landscapeTwo.png";
 import ProductSection from "./components/ProductSection"
+import VideoSequenceSection from "./components/VideoSequenceSection"
 
 
 const StylesHeroSection = styled.section`
@@ -41,7 +42,7 @@ function App() {
         <StyledTitle>Back to smooth and firm skin</StyledTitle>
         <ParalaxHeroSection />
       </StylesHeroSection>
-      <ProductSection/>
+      <ProductSection />
       <ContentSection
         title={"Take Care"}
         text={
@@ -72,6 +73,13 @@ function App() {
         sentenceTwo={"what we love"}
         crossreveal={"yPercent"}
       />
+      <ContentSection
+        title={"Take Care Three"}
+        text={
+          "Chartreuse leggings pop-up fit, lumbersexual tousled swag whatever pok pok copper mug activated charcoal butcher."
+        }
+      />
+      <VideoSequenceSection />
     </>
   );
 }
