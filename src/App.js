@@ -1,5 +1,13 @@
 import logo from './assets/logo.svg';
 import styled from "styled-components"
+import ParalaxHeroSection from "./components/ParalaxHeroSection"
+import ContentSection from "./components/ContentSection";
+import CrossRevealSection from "./components/CrossRevealSection"
+import FaceOne from "./assets/images/faceOne.png"
+import LandscapeOne from "./assets/images/landscapeOne.png"
+import LandscapeTwo from "../src/assets/images/landscapeTwo.png";
+import ProductSection from "./components/ProductSection"
+
 
 const StylesHeroSection = styled.section`
 position : relative;
@@ -21,18 +29,50 @@ font-weight: 400;
 letter-spacing: 4px;
 text-align: center;
 text-transform: uppercase;
-padding-top: 4rem;`
+padding-top: 4rem;
+`
 
 
 function App() {
   return (
-    <StylesHeroSection>
-        <img src={logo}  alt="logo" />
-        <StyledTitle>
-          Back to smooth and firm skin
-        </StyledTitle>
-        
-    </StylesHeroSection>
+    <>
+      <StylesHeroSection>
+        <img src={logo} alt="logo" />
+        <StyledTitle>Back to smooth and firm skin</StyledTitle>
+        <ParalaxHeroSection />
+      </StylesHeroSection>
+      <ProductSection/>
+      <ContentSection
+        title={"Take Care"}
+        text={
+          "Irony twee literally, williamsburg prism XOXO kitsch taiyaki DSA snackwave."
+        }
+      />
+      <CrossRevealSection
+        face={FaceOne}
+        landscape={LandscapeOne}
+        name={"Cristian Guard"}
+        job={"Founder"}
+        sentenceOne={"We only launch"}
+        sentenceTwo={"what we love"}
+        crossreveal={"xPercent"}
+      />
+      <ContentSection
+        title={"Take Care Two"}
+        text={
+          "Photo booth tofu praxis cronut pitchfork, austin art party poutine. Asymmetrical affogato shaman hell of big mood."
+        }
+      />
+      <CrossRevealSection
+        face={FaceOne}
+        landscape={LandscapeTwo}
+        name={"Cristian Guard"}
+        job={"Founder"}
+        sentenceOne={"We only launch"}
+        sentenceTwo={"what we love"}
+        crossreveal={"yPercent"}
+      />
+    </>
   );
 }
 
