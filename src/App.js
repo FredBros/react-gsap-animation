@@ -8,6 +8,7 @@ import LandscapeOne from "./assets/images/landscapeOne.png"
 import LandscapeTwo from "../src/assets/images/landscapeTwo.png";
 import ProductSection from "./components/ProductSection"
 import VideoSequenceSection from "./components/VideoSequenceSection"
+import Cursor from "./components/Cursor"
 
 
 const StylesHeroSection = styled.section`
@@ -37,6 +38,7 @@ padding-top: 4rem;
 function App() {
   return (
     <>
+    <Cursor/>
       <StylesHeroSection>
         <img src={logo} alt="logo" />
         <StyledTitle>Back to smooth and firm skin</StyledTitle>

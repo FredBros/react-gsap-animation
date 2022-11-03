@@ -105,7 +105,7 @@ function VideoSequenceSection() {
         trigger: videoSequenceTriggerRef.current,
         start: "center center",
         end: () => "+=" + videoSequenceTriggerRef.current.offsetHeight,
-        scrub: 1,
+        scrub: true,
         pin: true,
         anticipatePin: true,
         //markers: true,
