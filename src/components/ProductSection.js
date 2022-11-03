@@ -103,7 +103,7 @@ function ProductSection() {
         trigger: textSectionTriggerRef.current,
         start: "bottom bottom",
         scrub: true,
-        markers: true,
+        //markers: true,
       },
     });
     scaleDownTween
@@ -132,7 +132,7 @@ function ProductSection() {
         start: "bottom bottom",
         pin: true,
         scrub: true,
-        markers: true,
+        //markers: true,
         anticipatePin: 1,
       },
     });

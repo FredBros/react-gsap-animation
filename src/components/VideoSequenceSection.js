@@ -108,7 +108,7 @@ function VideoSequenceSection() {
         scrub: 1,
         pin: true,
         anticipatePin: true,
-        markers: true,
+        //markers: true,
       },
       onUpdate: updateImage
     });
